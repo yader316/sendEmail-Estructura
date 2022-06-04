@@ -8,9 +8,6 @@
 }
 
 .formContent{
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px 0;
     text-align: center;
 }
 .form-control{
@@ -69,6 +66,8 @@
     width: 100%;
     height: 45px;
     border: none;
+    background-color: initial;
+    color:initial;
     border-radius: 3px;
     font-size: 16px;
     font-weight: bold;
@@ -76,6 +75,7 @@
     transition: .3s ease all;
 }
 .formContent__btn:hover{
+    background-color: initial;
     transform: scale(1.02);
 }
 
