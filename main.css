@@ -68,18 +68,14 @@
 .formContent__btn{
     width: 100%;
     height: 45px;
-    background: #0075FF;
     border: none;
     border-radius: 3px;
-    color: #fff;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: .3s ease all;
 }
 .formContent__btn:hover{
-    background: #0075FF;
-    color: #fff;
     transform: scale(1.02);
 }
 
