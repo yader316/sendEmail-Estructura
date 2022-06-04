@@ -92,6 +92,8 @@ document.getElementById('send').addEventListener('click', (e) => {
     datos['message'] = textarea.value;
 
     datos.correo = document.querySelector('formContent').getAttribute('data-correo');
+    datos.logo = document.querySelector('formContent').getAttribute('data-logo');
+
     console.log(datos);
     var respuesta = confirm('¿Estas seguro de enviar el correo?');
 
