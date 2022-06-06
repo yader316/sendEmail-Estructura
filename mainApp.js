@@ -74,7 +74,7 @@ document.getElementById('send').addEventListener('click', (e) => {
     const datos = {};
     const inputs = document.querySelectorAll('formContent input');
     const serviceSelector = document.querySelectorAll('formContent select');
-    const checkBox = document.querySelectorAll('.formContent__checkOpt input');
+    const checkBox = document.querySelectorAll('.form-check-input');
     const textarea = document.querySelector('formContent textarea');
 
     inputs.forEach(input => {
@@ -85,8 +85,10 @@ document.getElementById('send').addEventListener('click', (e) => {
         datos[services.name] = services.value;
     });
 
-    checkBox.forEach(check => {
-        datos[check.name] = check.checked;
+    checkBox.forEach((check) => {
+        if(check.checked === true){
+            datos[check.name] = check.value;
+        }
     });
 
     datos['message'] = textarea.value;
@@ -94,7 +96,6 @@ document.getElementById('send').addEventListener('click', (e) => {
     datos.correo = document.querySelector('formContent').getAttribute('data-correo');
     datos.logo = document.querySelector('formContent').getAttribute('data-logo');
 
-    console.log(datos);
     var respuesta = confirm('¿Estas seguro de enviar el correo?');
 
     if (respuesta) {
@@ -108,13 +109,17 @@ document.getElementById('send').addEventListener('click', (e) => {
         .then(function (response) {
             if (response.status === 200) {
                 alert('mensaje enviado');
+                //limpiar inputs
                 inputs.forEach(input => {
                     input.value = '';
                 })
+                // limipiar textarea
                 textarea.value = '';
+                //limpiar checkbox
                 for (let i = 0; i < checkBox.length; i++) {
                     checkBox[i].checked = false;
                 }
+                //limpiar select
                 serviceSelector.forEach(services => {
                     services.selectedIndex = 0;
                 });
