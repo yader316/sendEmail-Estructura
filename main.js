@@ -33,7 +33,7 @@ formulario.innerHTML = `
 
                     <div class="formContent__menuContent">
                         <select name="services" class="formContent__menu form-control">
-                            <option selected value="Type You Services You Need">Type You Services You Need</option>
+                            <option selected disabled value="Type You Services You Need">Type You Services You Need</option>
                             ${servicesItems}
                         </select>
                     </div>
@@ -57,7 +57,7 @@ formulario.innerHTML = `
                     </div>
 
                     <button class="formContent__btn" id="send">
-                        Send A Message
+                        Send Message
                     </button>
 
                 </form>
