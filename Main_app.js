@@ -7,7 +7,7 @@ const expresiones={
 }
 
 
-const formulario = document.getElementsByTagName('formcontent');
+const formulario = document.getElementsByTagName('form-content');
 
 
 for(let i=0;i<formulario.length;i++){
@@ -18,50 +18,50 @@ for(let i=0;i<formulario.length;i++){
     });
 
     formulario[i].innerHTML=`
-        <div class="formcontent">
-            <div class="formcontent__container">
+        <div class="form-content">
+            <div class="form-content__container">
                 <form>
 
-                <div class="formcontent__nameContent">
-                    <input type="text" name="name" class="formcontent__name form-control" placeholder="name" autofocus required>
-                    <input type="text" name="lastName" class="formcontent__lastName form-control" placeholder="Last Name" required>
+                <div class="form-content__nameContent">
+                    <input type="text" name="name" class="form-content__name form-control" placeholder="name" autofocus required>
+                    <input type="text" name="lastName" class="form-content__lastName form-control" placeholder="Last Name" required>
                 </div>
 
-                <div class="formcontent__emailPhone">
-                    <input type="text" name="email" placeholder="Email" class="formcontent__email form-control" required>
-                    <input type="number" name="phone" placeholder="Phone" class="formcontent__phone form-control" required>
+                <div class="form-content__emailPhone">
+                    <input type="text" name="email" placeholder="Email" class="form-content__email form-control" required>
+                    <input type="number" name="phone" placeholder="Phone" class="form-content__phone form-control" required>
                 </div>
 
-                <div class="formcontent__addressContent">
-                    <input type="text" name="address" placeholder="Address" class="formcontent__address form-control" required>
+                <div class="form-content__addressContent">
+                    <input type="text" name="address" placeholder="Address" class="form-content__address form-control" required>
                 </div>
 
-                <div class="formcontent__menuContent">
-                    <select name="services" class="formcontent__menu form-control">
+                <div class="form-content__menuContent">
+                    <select name="services" class="form-content__menu form-control">
                         <option selected disabled value="Type You Services You Need">Type You Services You Need</option>
                         ${servicesItems}
                     </select>
                 </div>
 
-                <div class="formcontent__checkContent">
+                <div class="form-content__checkContent">
                     <p>Best Way To Contact You</p>
-                    <div class="formcontent__check">
-                        <div class="formcontent__checkOpt">
+                    <div class="form-content__check">
+                        <div class="form-content__checkOpt">
                             <input type="checkbox" class="form-check-input" name="phoneCheck" value="Phone">
                             <label class="form-check-label" for="phoneCheck">Phone</label>
                         </div>
-                        <div class="formcontent__checkOpt">
+                        <div class="form-content__checkOpt">
                             <input type="checkbox" class="form-check-input" name="emailCheck" value="Email">
                             <label class="form-check-label" for="emailCheck">Email</label>
                         </div>
                     </div>
                 </div>
 
-                <div class="formcontent__menssageContent">
-                    <textarea name="message"  placeholder="Message" class="formcontent__messages form-control"  required></textarea>
+                <div class="form-content__menssageContent">
+                    <textarea name="message"  placeholder="Message" class="form-content__messages form-control"  required></textarea>
                 </div>
 
-                <button class="formcontent__btn" id="send">
+                <button class="form-content__btn" id="send">
                     Send Message
                 </button>
 
@@ -77,10 +77,10 @@ document.getElementById('send').addEventListener('click', (e) => {
     e.preventDefault();
 
     const datos = {};
-    const inputs = document.querySelectorAll('formcontent input');
-    const serviceSelector = document.querySelectorAll('formcontent select');
+    const inputs = document.querySelectorAll('form-content input');
+    const serviceSelector = document.querySelectorAll('form-content select');
     const checkBox = document.querySelectorAll('.form-check-input');
-    const textarea = document.querySelector('formcontent textarea');
+    const textarea = document.querySelector('form-content textarea');
 
     inputs.forEach(input => {
         datos[input.name] = input.value;
@@ -98,8 +98,8 @@ document.getElementById('send').addEventListener('click', (e) => {
 
     datos['message'] = textarea.value;
 
-    datos.correo = document.querySelector('formcontent').getAttribute('data-correo');
-    datos.logo = document.querySelector('formcontent').getAttribute('data-logo');
+    datos.correo = document.querySelector('form-content').getAttribute('data-correo');
+    datos.logo = document.querySelector('form-content').getAttribute('data-logo');
 
     var respuesta = confirm('¿Estas seguro de enviar el correo?');
 

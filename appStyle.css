@@ -25,48 +25,48 @@
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
-.formcontent__checkContent {
+.form-content__checkContent {
     text-align: start;
     padding-bottom: 20px;
 }
 
-.formcontent__checkContent p {
+.form-content__checkContent p {
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 10px;
 }
 
-.formcontent__check {
+.form-content__check {
     display: flex;
 }
 
-.formcontent__checkOpt {
+.form-content__checkOpt {
     margin-right: 10px;
     margin-left: 10px;
 }
 
-.formcontent__nameContent,
-.formcontent__emailPhone {
+.form-content__nameContent,
+.form-content__emailPhone {
     display: flex;
     justify-content: space-around;
 }
 
-.formcontent__name,
-.formcontent__email {
+.form-content__name,
+.form-content__email {
     margin-right: 10px;
 }
 
-.formcontent__lastName,
-.formcontent__phone {
+.form-content__lastName,
+.form-content__phone {
     margin-left: 10px;
 }
 
-.formcontent__messages {
+.form-content__messages {
     height: 100px;
     line-height: 1.5em;
 }
 
-.formcontent__btn {
+.form-content__btn {
     border: none;
     border-radius: 3px;
     font-size: 16px;
@@ -75,21 +75,21 @@
     transition: .3s ease all;
 }
 
-.formcontent__btn:hover {
+.form-content__btn:hover {
     transform: scale(1.02);
 }
 
 @media screen and (max-width: 560px) {
 
-    .formcontent__nameContent,
-    .formcontent__emailPhone {
+    .form-content__nameContent,
+    .form-content__emailPhone {
         display: block;
     }
 
-    .formcontent__name,
-    .formcontent__email,
-    .formcontent__lastName,
-    .formcontent__phone {
+    .form-content__name,
+    .form-content__email,
+    .form-content__lastName,
+    .form-content__phone {
         margin: 0 0 10px 0;
     }
 }
