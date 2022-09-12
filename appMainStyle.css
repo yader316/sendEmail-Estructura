@@ -25,48 +25,48 @@
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
-.Formcontent__checkContent {
+.formcontent__checkContent {
     text-align: start;
     padding-bottom: 20px;
 }
 
-.Formcontent__checkContent p {
+.formcontent__checkContent p {
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 10px;
 }
 
-.Formcontent__check {
+.formcontent__check {
     display: flex;
 }
 
-.Formcontent__checkOpt {
+.formcontent__checkOpt {
     margin-right: 10px;
     margin-left: 10px;
 }
 
-.Formcontent__nameContent,
-.Formcontent__emailPhone {
+.formcontent__nameContent,
+.formcontent__emailPhone {
     display: flex;
     justify-content: space-around;
 }
 
-.Formcontent__name,
-.Formcontent__email {
+.formcontent__name,
+.formcontent__email {
     margin-right: 10px;
 }
 
-.Formcontent__lastName,
-.Formcontent__phone {
+.formcontent__lastName,
+.formcontent__phone {
     margin-left: 10px;
 }
 
-.Formcontent__messages {
+.formcontent__messages {
     height: 100px;
     line-height: 1.5em;
 }
 
-.Formcontent__btn {
+.formcontent__btn {
     border: none;
     border-radius: 3px;
     font-size: 16px;
@@ -75,21 +75,21 @@
     transition: .3s ease all;
 }
 
-.Formcontent__btn:hover {
+.formcontent__btn:hover {
     transform: scale(1.02);
 }
 
 @media screen and (max-width: 560px) {
 
-    .Formcontent__nameContent,
-    .Formcontent__emailPhone {
+    .formcontent__nameContent,
+    .formcontent__emailPhone {
         display: block;
     }
 
-    .Formcontent__name,
-    .Formcontent__email,
-    .Formcontent__lastName,
-    .Formcontent__phone {
+    .formcontent__name,
+    .formcontent__email,
+    .formcontent__lastName,
+    .formcontent__phone {
         margin: 0 0 10px 0;
     }
 }
